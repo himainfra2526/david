@@ -1,0 +1,12 @@
+[
+  { "matkul": "Math", "tahun": 2023, "soal": "Apa itu integral?" },
+  { "matkul": "Physics", "tahun": 2022, "soal": "Hukum Newton pertama?" },
+  { "matkul": "Chemistry", "tahun": 2021, "soal": "Apa itu reaksi kimia?" },
+  { "matkul": "Biology", "tahun": 2020, "soal": "Struktur sel?" },
+  { "matkul": "History", "tahun": 2019, "soal": "Perang Dunia I?" },
+  { "matkul": "Geography", "tahun": 2018, "soal": "Iklim tropis?" },
+  { "matkul": "Literature", "tahun": 2017, "soal": "Shakespeare?" },
+  { "matkul": "Art", "tahun": 2016, "soal": "Renaissance?" },
+  { "matkul": "Music", "tahun": 2015, "soal": "Simfoni Beethoven?" },
+  { "matkul": "Computer Science", "tahun": 2014, "soal": "Algoritma sorting?" }
+]

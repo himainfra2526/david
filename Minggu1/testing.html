@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Question List Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #questionList { list-style-type: none; padding: 0; }
+        li { padding: 10px; border: 1px solid #ccc; margin: 5px 0; }
+        button { margin: 10px 5px; padding: 10px; }
+        input[type="text"] { padding: 10px; width: 200px; }
+        #loading { display: none; color: blue; }
+        #error { display: none; color: red; }
+    </style>
+</head>
+<body>
+    <h1>Simple Question List Viewer</h1>
+    
+    <form id="questionForm">
+        <input type="text" id="matkulInput" placeholder="Masukkan Mata Kuliah">
+        <button type="submit">Tambah Soal</button>
+    </form>
+
+    <input type="text" id="searchInput" placeholder="Cari berdasarkan matkul atau tahun">
+    <button id="fetchAPIBtn">Fetch from API</button>
+    <button id="fetchLocalBtn">Fetch from Local JSON</button>
+    <div id="loading">Loading...</div>
+    <div id="error"></div>
+
+    <ul id="questionList"></ul>
+    <button id="loadMoreBtn" style="display: none;">Load More</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
