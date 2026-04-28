@@ -23,6 +23,14 @@ class SoalController extends Controller
             $query->where('tipe', $request->tipe);
         }
 
+        // BONUS: Sort by column
+        $allowedSortColumns = ['matkul', 'tahun'];
+        $sortBy  = $request->get('sort_by', 'id');
+        $sortDir = strtolower($request->get('sort_dir', 'asc')) === 'desc' ? 'desc' : 'asc';
+        if (in_array($sortBy, $allowedSortColumns)) {
+            $query->orderBy($sortBy, $sortDir);
+        }
+
         // BONUS: Pagination
         $perPage = $request->get('per_page', 10);
         $soal = $query->paginate($perPage);
